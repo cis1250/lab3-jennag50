@@ -34,4 +34,21 @@ user_sentence = input("Enter a sentence: ")
 while (is_sentence(user_sentence) == False):
     print("This does not meet the criteria for a sentence.")
     user_input = input("Enter a sentence: ")
+
+split_input = split(user_input)
+word_count = []
+index = 0
+words = []
+for i in range(split_input):
+    if split_input[i] in words:
+        index = words.index(split_input[i])
+        word_count[index]++
+        else:
+            words.append(split_input[i])
+            word_count.append(1)
+
+for j in range(words):
+    print(words[i]+": "+word_count[i])
+
+    
     
