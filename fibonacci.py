@@ -7,7 +7,7 @@
 # Use a for loop to print the Fibonacci sequence up to that many terms.
 
 print("How many terms for the Fibonacci Sequence would you like?")
-fibln = input()
+fibln = int(input())
 while (fibln < 0):
   print("Invalid! Must enter a positive integer. \n How many terms for the Fibonacci Sequence would you like?")
   fibln = input()
